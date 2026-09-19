@@ -1,4 +1,5 @@
 /*16px is equal to 1.00rem*/
+/* mixin */
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
@@ -21,6 +22,12 @@ body {
   min-height: 100vh;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--gray-50);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 5. Improve media defaults */
@@ -89,6 +96,10 @@ h6 {
   font-style: normal;
 }
 
+.desktop-menu {
+  display: none;
+}
+
 .mobile-menu {
   width: 0;
   position: fixed;
@@ -100,11 +111,26 @@ h6 {
   transition: 0.5s;
   border-radius: 5px;
   padding-top: 1rem;
-  background-color: var(--gray-50);
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-img {
   background-color: var(--orange-50);
+}
+
+.close-btn {
+  display: none;
+}
+
+.hamburger-btn {
+  cursor: pointer;
 }
 
 header {
@@ -112,10 +138,28 @@ header {
   z-index: 5;
   padding: 1.2rem;
   height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (min-width: 50rem) {
+.desktop-menu-btn {
+  display: none;
+}
+
+.hero-text h1 {
+  color: var(--blue-950);
+}
+
+@media (min-width: 35rem) {
   body {
     background-color: red;
+  }
+  .desktop-menu {
+    display: block;
+  }
+  .desktop-menu-btn {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */
