@@ -39,7 +39,7 @@ body {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-family: "Be Vietnam Pro", sans-serif;
   background-color: var(--gray-50);
-  margin: 0 auto;
+  margin: 1rem 1rem;
   @include flexcol;
 }
 
@@ -87,9 +87,12 @@ h6 {
 :root {
   --orange-400: hsl(12, 88%, 59%);
   --blue-950: hsl(228, 39%, 23%);
+  --blue-100: hsla(229, 30%, 38%, 0.415);
+
   --gray-950: hsl(233, 12%, 13%);
   --orange-50: hsl(13, 100%, 96%);
   --gray-50: hsl(0, 0%, 98%);
+  --gray: rgb(118, 116, 116);
 }
 
 .be-vietnam-pro-regular {
@@ -126,8 +129,37 @@ h6 {
   background-color: white;
 }
 
+.graytext {
+    color: var(--blue-100);
+}
+
+
+.hero-btn {
+    background-color: var(--orange-400);
+    
+    color: var(--gray-50);
+    font-weight: 500;
+     font-size: 0.87rem;
+     box-shadow: 10px 5px 5px var(--orange-50);
+
+}
+
+.blue-text {
+    color: var(--blue-950);
+}
+button {
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+    padding: 0.5rem;
+    cursor: pointer;
+    
+
+}
+
 .container {
    @include flexcol;
+   margin: 2rem;
 }
 .mobile-img {
   background-color: var(--orange-50);
@@ -152,9 +184,19 @@ header {
 }
 
 .hero-text {
+    @include flexcol;
+    padding-bottom: 2rem;
+    gap: 0.7rem;
+    text-align: center;
   h1 {
     color: var(--blue-950);
   }
+}
+
+.manage-section {
+    gap: 0.7rem;
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
 @media (min-width: 35rem) {
