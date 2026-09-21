@@ -129,8 +129,9 @@ h6 {
   color: var(--blue-100);
 }
 
-.hero-btn {
+.orange-btn {
   background-color: var(--orange-400);
+  margin-top: 2rem;
   color: var(--gray-50);
   font-weight: 500;
   font-size: 0.87rem;
@@ -227,6 +228,8 @@ header {
 
 .slider-title {
   font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 /* Slideshow container */
@@ -238,15 +241,17 @@ header {
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
+  padding: 50px;
   text-align: center;
 }
 .mySlides img {
-  align-items: center;
+  display: block;
+  margin: auto;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -268,7 +273,8 @@ header {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: var(--orange-400);
   color: white;
 }
@@ -292,11 +298,29 @@ header {
 }
 
 /* Add a background color to the active dot/circle */
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: var(--orange-400);
 }
 
-@media (min-width: 35rem) {
+.simplify-section {
+  background-color: var(--orange-400);
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  height: 300px;
+  color: var(--orange-50);
+}
+.simplify-section img {
+  z-index: 1;
+  position: absolute;
+}
+.simplify-section h6 {
+  font-size: 2rem;
+}
+
+@media (min-width: 38rem) {
   .desktop-menu {
     display: block;
   }
