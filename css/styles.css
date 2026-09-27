@@ -384,6 +384,18 @@ footer .socials {
   gap: 1rem;
 }
 
+.input-area {
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: none;
+}
+
+.footer-btn {
+  background-color: var(--orange-400);
+  color: white;
+  width: 60px;
+}
+
 @media (min-width: 38rem) {
   .desktop-menu {
     display: block;

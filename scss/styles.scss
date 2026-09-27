@@ -172,7 +172,7 @@ h6 {
 }
 
 .orange-btn:hover {
-opacity: 0.7;
+  opacity: 0.7;
 }
 .blue-text {
   color: var(--blue-950);
@@ -360,7 +360,7 @@ header {
     z-index: 1;
     position: absolute;
     left: 0;
-    }
+  }
   h6 {
     font-size: 2rem;
     margin-left: 2rem;
@@ -387,8 +387,17 @@ footer {
   }
 }
 
+.input-area {
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: none;
+}
 
-
+.footer-btn {
+  background-color: var(--orange-400);
+  color: white;
+  width: 60px;
+}
 @media (min-width: 38rem) {
   .desktop-menu {
     display: block;
