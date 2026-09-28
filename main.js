@@ -2,6 +2,26 @@ const hamburgerBtn = document.getElementById("hamburgerBtn");
 const closeBtn = document.getElementById("closeBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
+const emailForm = document.getElementById("emailForm");
+
+emailForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const email = document.getElementById("inputArea").value;
+  const errMsg = document.getElementById("error-message");
+
+  const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+  if (pattern.test(email)) {
+    errMsg.style.display = "none";
+    alert("Email is valid! Form Submitted.");
+    document.getElementById("emailForm").reset();
+  } else {
+    alert("Not valid email. Try again.");
+  }
+});
+// end of the email test
+
 hamburgerBtn.addEventListener("click", () => {
   mobileMenu.style.width = "400px";
   hamburgerBtn.style.display = "none";

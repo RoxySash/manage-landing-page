@@ -50,13 +50,13 @@
           class="hamburger-btn"
         />
         <nav class="mobile-menu" id="mobileMenu">
-          <ul>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
+          <ul class="list-menu-mobile">
+            <li class="list-item"><a href="#" class="links-mobile">Pricing</a></li>
+            <li class="list-item"><a href="#" class="links-mobile">Product</a></li>
+            <li class="list-item"><a href="#" class="links-mobile">About</a></li>
+            <li class="list-item"><a href="#" class="links-mobile">Us</a></li>
+            <li class="list-item"><a href="#" class="links-mobile">Careers</a></li>
+            <li class="list-item"><a href="#" class="links-mobile">Community</a></li>
           </ul>
         </nav>
 
@@ -70,7 +70,7 @@
             <li><a href="#">Community</a></li>
           </ul>
         </nav>
-        <button type="button" class="desktop-menu-btn">Get Started</button>
+        <button type="button orange-btn" class="desktop-menu-btn">Get Started</button>
       </header>
       <section class="hero">
         <img
@@ -200,68 +200,64 @@
           <span class="dot" onclick="currentSlide(3)"></span>
           <span class="dot" onclick="currentSlide(4)"></span>
         </div>
- <button type="button" class="orange-btn">Get Started</button>
+        <button type="button" class="orange-btn">Get Started</button>
       </section>
 
-     
-      
       <section class="simplify-section">
         <img
-        src="./images/bg-simplify-section-mobile.svg"
-        class="simplify-img"
-        alt="bg image for the simple section"
-        width="80"
-        >
-        <h6>Simplify how your team works today.</h6> <button type="button" class="white-btn">
-          Get
-          Started
-        </button>
+          src="./images/bg-simplify-section-mobile.svg"
+          class="simplify-img"
+          alt="bg image for the simple section"
+          width="80"
+        />
+        <h6>Simplify how your team works today.</h6>
+        <button type="button" class="white-btn">Get Started</button>
       </section>
     </main>
 
     <footer>
-      <div>
-        <input type="text" placeholder="Updates in your inbox…" class="input-area" id="inputArea">
-        <button class="footer-btn" id="footerBtn" type="submit">Go</button>
+      <form id="emailForm">
+        <div class="btninput">
+          <input
+            type="text"
+            placeholder="Updates in your inbox…"
+            class="input-area"
+            id="inputArea"
+            name="email"
+            required
+          />
+          <button class="footer-btn" id="footerBtn" type="submit">Go</button>
+        </div>
+      </form>
+
+      <div class="footer-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
       </div>
-      Home Pricing Products About Us Careers Community Privacy Policy
       <div class="socials">
-        <img
-        src="./images/icon-facebook.svg"
-        width="30"
-        height="30"
-        >
-        <img
-        src="./images/icon-youtube.svg"
-        width="30"
-        height="30"
-        >
-        <img
-        src="./images/icon-twitter.svg"
-        width="30"
-        height="30"
-        >
-        <img
-        src="./images/icon-pinterest.svg"
-        width="30"
-        height="30"
-        >
-        <img
-        src="./images/icon-instagram.svg"
-        width="30"
-        height="30"
-        >
-      </div>  
+        <img src="./images/icon-facebook.svg" width="30" height="30" alt="facebook icon white"/>
+        <img src="./images/icon-youtube.svg" width="30" height="30" alt="youtube icon white"/>
+        <img src="./images/icon-twitter.svg" width="30" height="30" alt="twitter icon white"/>
+        <img src="./images/icon-pinterest.svg" width="30" height="30" alt="pinterest icon white"/>
+        <img src="./images/icon-instagram.svg" width="30" height="30" alt="instagram icon white"/>
+      </div>
       <span>Copyright 2020. All Rights Reserved</span>
 
-      
       <p class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-        Coded by <a href="#">Roxane Hedge</a>.
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Roxane Hedge</a>.
       </p>
     </footer>
     <script src="main.js"></script>
   </body>
-  
 </html>

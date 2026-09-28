@@ -174,6 +174,28 @@ h6 {
 .orange-btn:hover {
   opacity: 0.7;
 }
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+}
+
+.list-menu-mobile {
+ 
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.links-mobile {
+  color: var(--gray-950);
+  font-size: 1.1rem;
+  margin: 0.7rem;
+}
+
+
 .blue-text {
   color: var(--blue-950);
 }
@@ -351,7 +373,8 @@ header {
   z-index: 2;
   position: relative;
   width: 100%;
-  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   height: 300px;
   color: var(--orange-50);
   @include flexcol;
@@ -373,7 +396,7 @@ header {
 .white-btn {
   color: var(--orange-400);
   font-size: 0.87rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 footer {
@@ -388,16 +411,42 @@ footer {
 }
 
 .input-area {
-  padding: 0.5rem;
+  
   border-radius: 30px;
   border: none;
+  width: 80%;
+padding: 0.5rem;
+margin: 1rem;
+}
+
+.btninput {
+  @include flexrow;
+  gap: 1rem;
+  
+}
+input::placeholder {
+  padding-left: 1rem;
+  font-size: 0.86rem;
+}
+
+form {
+  
+  width: 100%;
 }
 
 .footer-btn {
   background-color: var(--orange-400);
   color: white;
-  width: 60px;
+  width: 20%;
+
 }
+.footer-list {
+  @include flexrow;
+  gap: 4rem;
+}
+
+
+
 @media (min-width: 38rem) {
   .desktop-menu {
     display: block;
