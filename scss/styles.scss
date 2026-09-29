@@ -189,6 +189,7 @@ ul li a {
   text-decoration: none;
 }
 
+
 .links-mobile {
   color: var(--gray-950);
   font-size: 1.1rem;
@@ -443,8 +444,24 @@ form {
 .footer-list {
   @include flexrow;
   gap: 4rem;
+  color: 2px solid pink;
+li {
+   list-style-type: none;
+  text-decoration: none;
 }
 
+}
+.link {
+  list-style-type: none;
+  color: var(--gray-50);
+}
+.copyright-text{
+ color: gray;
+}
+.footer-menu {
+  @include flexrow;
+  border: 2px solid blue;
+}
 
 
 @media (min-width: 38rem) {

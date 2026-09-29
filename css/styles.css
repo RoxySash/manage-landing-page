@@ -441,6 +441,28 @@ form {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
+  color: 2px solid pink;
+}
+.footer-list li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.link {
+  list-style-type: none;
+  color: var(--gray-50);
+}
+
+.copyright-text {
+  color: gray;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid blue;
 }
 
 @media (min-width: 38rem) {
