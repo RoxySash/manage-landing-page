@@ -20,7 +20,7 @@ body {
   line-height: 1.5;
   /* 4. Improve centering within parent */
   min-height: 100vh;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-family: "Be Vietnam Pro", sans-serif;
   background-color: var(--gray-50);
   display: flex;
@@ -207,6 +207,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .desktop-menu-btn {
@@ -271,13 +272,11 @@ header {
   padding-bottom: 2rem;
 }
 
-/* Slideshow container */
 .slideshow-container {
   position: relative;
   background: rgba(241, 241, 241, 0.9450980392);
 }
 
-/* Slides */
 .mySlides {
   display: none;
   padding: 50px;
@@ -300,7 +299,6 @@ header {
   margin-bottom: 2rem;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -316,27 +314,23 @@ header {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: var(--orange-400);
   color: white;
 }
 
-/* The dot/bullet/indicator container */
 .dot-container {
   text-align: center;
   padding: 20px;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 10px;
@@ -348,7 +342,6 @@ header {
   transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
   background-color: var(--orange-400);
@@ -401,7 +394,8 @@ footer .socials {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .input-area {
@@ -437,11 +431,11 @@ form {
 
 .footer-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
-  color: 2px solid pink;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
 }
 .footer-list li {
   list-style-type: none;
@@ -455,19 +449,49 @@ form {
 
 .copyright-text {
   color: gray;
+  font-size: 0.78rem;
+  margin-bottom: 1rem;
 }
 
 .footer-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid blue;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 38rem) {
+  .orange-btn {
+    margin-top: 0;
+  }
   .desktop-menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.89rem;
+  }
+  .desktop-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .desktop-menu li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .desktop-menu a {
+    text-decoration: none;
+    color: var(--gray-950);
   }
   .desktop-menu-btn {
     display: block;
@@ -480,5 +504,64 @@ form {
   }
   .hamburger-btn {
     display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  .intro-img {
+    width: 45%;
+  }
+  .hero-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .manage-section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .manage-section .manage-toparea {
+    text-align: left;
+  }
+  .simplify-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .desktop-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  footer .footer-menu {
+    gap: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  footer .socials {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

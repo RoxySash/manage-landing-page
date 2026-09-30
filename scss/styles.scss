@@ -29,6 +29,27 @@
   align-items: center;
 }
 
+@mixin flexrowleft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flexcolleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flexcenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin leftrightmargin {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -54,7 +75,7 @@ body {
   line-height: 1.5;
   /* 4. Improve centering within parent */
   min-height: 100vh;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-family: "Be Vietnam Pro", sans-serif;
   background-color: var(--gray-50);
 
@@ -183,19 +204,16 @@ ul li a {
 }
 
 .list-menu-mobile {
- 
   text-align: center;
   list-style-type: none;
   text-decoration: none;
 }
-
 
 .links-mobile {
   color: var(--gray-950);
   font-size: 1.1rem;
   margin: 0.7rem;
 }
-
 
 .blue-text {
   color: var(--blue-950);
@@ -234,6 +252,7 @@ header {
   padding: 1.2rem;
   height: 50px;
   @include flexrow;
+  margin-top: 1rem;
 }
 .desktop-menu-btn {
   display: none;
@@ -289,13 +308,11 @@ header {
   padding-bottom: 2rem;
 }
 
-/* Slideshow container */
 .slideshow-container {
   position: relative;
   background: #f1f1f1f1;
 }
 
-/* Slides */
 .mySlides {
   display: none;
   padding: 50px;
@@ -315,7 +332,6 @@ header {
   margin-bottom: 2rem;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -331,27 +347,23 @@ header {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: var(--orange-400);
   color: white;
 }
 
-/* The dot/bullet/indicator container */
 .dot-container {
   text-align: center;
   padding: 20px;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 10px;
@@ -363,7 +375,6 @@ header {
   transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
   background-color: var(--orange-400);
@@ -407,23 +418,22 @@ footer {
   @include flexcol;
   .socials {
     @include flexrow;
-    gap: 1rem;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
 .input-area {
-  
   border-radius: 30px;
   border: none;
   width: 80%;
-padding: 0.5rem;
-margin: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
 }
 
 .btninput {
   @include flexrow;
   gap: 1rem;
-  
 }
 input::placeholder {
   padding-left: 1rem;
@@ -431,7 +441,6 @@ input::placeholder {
 }
 
 form {
-  
   width: 100%;
 }
 
@@ -439,35 +448,60 @@ form {
   background-color: var(--orange-400);
   color: white;
   width: 20%;
-
 }
 .footer-list {
-  @include flexrow;
-  gap: 4rem;
-  color: 2px solid pink;
-li {
-   list-style-type: none;
-  text-decoration: none;
-}
+  @include flexcolleft;
+  text-align: left;
+  gap: 1rem;
 
+  li {
+    list-style-type: none;
+    text-decoration: none;
+  }
 }
 .link {
   list-style-type: none;
   color: var(--gray-50);
 }
-.copyright-text{
- color: gray;
+.copyright-text {
+  color: gray;
+  font-size: 0.78rem;
+  margin-bottom: 1rem;
 }
 .footer-menu {
-  @include flexrow;
-  border: 2px solid blue;
+  @include flexrowleft;
+  gap: 3rem;
+
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-
+.footer-logo {
+  margin-bottom: 1rem;
+}
 @media (min-width: 38rem) {
+.orange-btn {
+  margin-top: 0;
+}
   .desktop-menu {
-    display: block;
+    @include flexcenter;
+    font-size: 0.89rem;
+    
+    ul {
+      @include flexcenter;
+      gap: 1rem;
+    }
+    li {
+      text-decoration: none;
+      list-style-type: none;
+
+    }
+    a {
+      text-decoration: none;
+      color: var(--gray-950);
+    }
   }
+
   .desktop-menu-btn {
     display: block;
   }
@@ -478,4 +512,61 @@ li {
   .hamburger-btn {
     display: none;
   }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  .intro-img {
+    width: 45%;
+  }
+  .hero-text {
+    width:45%;
+    @include flexcolleft;
+    text-align: left;
+  }
+  .manage-section {
+    margin-top: 2rem;
+    @include flexrowleft;
+ .manage-toparea {
+  text-align: left;
+ }
+
+  }
+  .simplify-section {
+    @include flexstart;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .desktop-footer {
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  } 
+ 
+  .footer-menu {
+  gap: 1rem;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.socials {
+    
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
 }

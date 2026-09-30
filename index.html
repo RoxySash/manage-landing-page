@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -21,7 +20,6 @@
 
     <title>Frontend Mentor | Manage landing page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 0.6875rem;
@@ -70,7 +68,7 @@
             <li><a href="#">Community</a></li>
           </ul>
         </nav>
-        <button type="button orange-btn" class="desktop-menu-btn">Get Started</button>
+        <button type="button" class="desktop-menu-btn orange-btn">Get Started</button>
       </header>
       <section class="hero">
         <img
@@ -216,43 +214,46 @@
     </main>
 
     <footer>
-      <form id="emailForm">
-        <div class="btninput">
-          <input
-            type="text"
-            placeholder="Updates in your inbox…"
-            class="input-area"
-            id="inputArea"
-            name="email"
-            required
-          />
-          <button class="footer-btn" id="footerBtn" type="submit">Go</button>
+      <div class="desktop-footer">
+        <form id="emailForm">
+          <div class="btninput">
+            <input
+              type="text"
+              placeholder="Updates in your inbox…"
+              class="input-area"
+              id="inputArea"
+              name="email"
+              required
+            />
+            <button class="footer-btn" id="footerBtn" type="submit">Go</button>
+          </div>
+        </form>
+        <div class="footer-menu">
+          <ul class="footer-list">
+            <li><a href="#" class="link">Home</a></li>
+            <li><a href="#" class="link">Pricing</a></li>
+            <li><a href="#" class="link">Products</a></li>
+            <li><a href="#" class="link">About Us</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li><a href="#" class="link">Careers</a></li>
+            <li><a href="#" class="link">Community</a></li>
+            <li><a href="#" class="link">Privacy Policy</a></li>
+          </ul>
         </div>
-      </form>
-
-      <div class="footer-menu">
-        <ul class="footer-list">
-          <li><a href="#" class="link">Home</a></li>
-          <li><a href="#" class="link">Pricing</a></li>
-          <li><a href="#" class="link">Products</a></li>
-          <li><a href="#" class="link">About Us</a></li>
-        </ul>
-        <ul class="footer-list">
-          <li><a href="#" class="link">Careers</a></li>
-          <li><a href="#" class="link">Community</a></li>
-          <li><a href="#" class="link">Privacy Policy</a></li>
-        </ul>
+        <div>
+          <div class="socials">
+            <img src="./images/icon-facebook.svg" width="30" height="30" alt="facebook icon white"/>
+            <img src="./images/icon-youtube.svg" width="30" height="30" alt="youtube icon white"/>
+            <img src="./images/icon-twitter.svg" width="30" height="30" alt="twitter icon white"/>
+            <img src="./images/icon-pinterest.svg" width="30" height="30" alt="pinterest icon white"/>
+            <img src="./images/icon-instagram.svg" width="30" height="30" alt="instagram icon white"/>
+          </div>
+          <img src="./images/logo.svg" alt="footer logo in blue" class="footer-logo">
+        </div>
+       
       </div>
-      <div class="socials">
-        <img src="./images/icon-facebook.svg" width="30" height="30" alt="facebook icon white"/>
-        <img src="./images/icon-youtube.svg" width="30" height="30" alt="youtube icon white"/>
-        <img src="./images/icon-twitter.svg" width="30" height="30" alt="twitter icon white"/>
-        <img src="./images/icon-pinterest.svg" width="30" height="30" alt="pinterest icon white"/>
-        <img src="./images/icon-instagram.svg" width="30" height="30" alt="instagram icon white"/>
-      </div>
-      <img src="./images/logo.svg" alt="footer logo in blue">
-      <span class="copyright-text">Copyright 2020. All Rights Reserved</span>
-
+ <span class="copyright-text">Copyright 2020. All Rights Reserved</span>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
