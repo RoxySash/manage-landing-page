@@ -544,7 +544,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+gap: 2rem;
     .desktop-footer {
       display: flex;
       flex-direction: row;
@@ -555,10 +555,17 @@ form {
 
     .footer-menu {
       gap: 1rem;
-      @include flexrowleft;
+      
       margin-top: 0;
       margin-bottom: 0;
       li {
+        text-align: left;
+      }
+      .footer-list {
+        padding-left: 0;
+        text-align: left;
+      }
+      a {
         text-align: left;
       }
     }

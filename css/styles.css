@@ -547,6 +547,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
   }
   footer .desktop-footer {
     display: flex;
@@ -557,14 +558,17 @@ form {
   }
   footer .footer-menu {
     gap: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
     margin-top: 0;
     margin-bottom: 0;
   }
   footer .footer-menu li {
+    text-align: left;
+  }
+  footer .footer-menu .footer-list {
+    padding-left: 0;
+    text-align: left;
+  }
+  footer .footer-menu a {
     text-align: left;
   }
   footer .socials {
