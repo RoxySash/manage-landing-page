@@ -557,11 +557,22 @@ form {
   }
   footer .footer-menu {
     gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  footer .footer-menu li {
+    text-align: left;
   }
   footer .socials {
     gap: 0.5rem;
     margin-bottom: 1rem;
+  }
+  footer .footer-logo {
+    margin-top: 2rem;
+    width: 400px;
   }
 }/*# sourceMappingURL=styles.css.map */
