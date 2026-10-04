@@ -25,7 +25,7 @@ emailForm.addEventListener("submit", function (event) {
 });
 
 hamburgerBtn.addEventListener("click", () => {
-  mobileMenu.style.width = "400px";
+  mobileMenu.style.width = "250px";
   hamburgerBtn.style.display = "none";
   closeBtn.style.display = "flex";
 });
