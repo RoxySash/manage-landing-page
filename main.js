@@ -18,10 +18,11 @@ emailForm.addEventListener("submit", function (event) {
     document.getElementById("emailForm").reset();
   } else {
     errMsg.style.display = "block";
-    errMsg.textContent = "Please enter a valid email address.";
+    errMsg.style.color = "red";
+    errMsg.style.fontSize = "small";
+    errMsg.textContent = "Please enter a valid email.";
   }
 });
-
 
 hamburgerBtn.addEventListener("click", () => {
   mobileMenu.style.width = "400px";

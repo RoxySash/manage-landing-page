@@ -429,6 +429,7 @@ footer {
   width: 80%;
   padding: 0.5rem;
   margin: 1rem;
+  font-size: 0.65rem;
 }
 
 .btninput {
@@ -484,15 +485,16 @@ form {
   margin-bottom: 1rem;
 }
 
-.error-message {
-  color: var(--orange-400);
-  font-size: 0.7rem;
-  display: none;
-  margin-bottom: 0;
-}
-
 .inputerror {
   @include flexcol;
+
+  .error-message {
+    color: var(--orange-400);
+    font-size: 0.7rem;
+    display: none;
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 @media (min-width: 38rem) {
