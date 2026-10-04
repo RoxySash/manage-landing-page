@@ -219,14 +219,17 @@
       <div class="desktop-footer">
         <form type="submit" id="emailForm">
           <div class="btninput">
-            <input
-              type="text"
-              placeholder="Updates in your inbox…"
-              class="input-area"
-              id="inputArea"
-              name="email"
-              required
-            />
+            <div class="inputerror">
+              <input
+                type="text"
+                placeholder="Updates in your inbox…"
+                class="input-area"
+                id="inputArea"
+                name="email"
+                required
+              />
+              <span id="errorMessage" class="error-message"></span>
+            </div>
             <button class="footer-btn" id="footerBtn" type="submit">Go</button>
             
           </div>

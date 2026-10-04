@@ -483,6 +483,18 @@ form {
 .footer-logo {
   margin-bottom: 1rem;
 }
+
+.error-message {
+  color: var(--orange-400);
+  font-size: 0.7rem;
+  display: none;
+  margin-bottom: 0;
+}
+
+.inputerror {
+  @include flexcol;
+}
+
 @media (min-width: 38rem) {
   .orange-btn {
     margin-top: 0;
@@ -549,7 +561,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-gap: 2rem;
+    gap: 2rem;
     .desktop-footer {
       display: flex;
       flex-direction: row;
@@ -560,7 +572,7 @@ gap: 2rem;
 
     .footer-menu {
       gap: 1rem;
-      
+
       margin-top: 1rem;
       margin-bottom: 0;
       li {
@@ -587,15 +599,13 @@ gap: 2rem;
   }
   .copyright-text-desktop {
     display: block;
-     color: gray;
-  font-size: 0.78rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-top: 1rem;
+    color: gray;
+    font-size: 0.78rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
-.copyright-text-mobile {
-  display: none;
-}
-
-
+  .copyright-text-mobile {
+    display: none;
+  }
 }

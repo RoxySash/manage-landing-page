@@ -8,7 +8,7 @@ emailForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const email = document.getElementById("inputArea").value;
-  const errMsg = document.getElementById("error-message");
+  const errMsg = document.getElementById("errorMessage");
 
   const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
@@ -17,10 +17,11 @@ emailForm.addEventListener("submit", function (event) {
     alert("Email is valid! Form Submitted.");
     document.getElementById("emailForm").reset();
   } else {
-    alert("Not valid email. Try again.");
+    errMsg.style.display = "block";
+    errMsg.textContent = "Please enter a valid email address.";
   }
 });
-// end of the email test
+
 
 hamburgerBtn.addEventListener("click", () => {
   mobileMenu.style.width = "400px";
