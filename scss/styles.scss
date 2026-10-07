@@ -258,6 +258,9 @@ header {
   display: none;
 }
 
+.socials-logo {
+  @include flexcol;
+}
 .hero-text {
   @include flexcol;
   padding-bottom: 2rem;
