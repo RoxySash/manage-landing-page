@@ -421,7 +421,7 @@ footer {
   @include flexcol;
   .socials {
     @include flexrow;
-    gap: 2.5rem;
+    gap: 2rem;
     margin-bottom: 2rem;
   }
 }
