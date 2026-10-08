@@ -72,11 +72,10 @@ h6 {
 :root {
   --orange-400: hsl(12, 88%, 59%);
   --blue-950: hsl(228, 39%, 23%);
-  --blue-100: hsla(229, 30%, 38%, 0.415);
+  --blue-100: hsl(227, 12%, 61%);
   --gray-950: hsl(233, 12%, 13%);
   --orange-50: hsl(13, 100%, 96%);
   --gray-50: hsl(0, 0%, 98%);
-  --gray: rgb(118, 116, 116);
 }
 
 .be-vietnam-pro-regular {
@@ -116,9 +115,9 @@ h6 {
   z-index: 4;
   top: 70px;
   left: 40px;
-  height: 400px;
+  height: auto;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: transform 0.5s ease;
   border-radius: 5px;
   padding-top: 1rem;
   background-color: white;
@@ -212,6 +211,13 @@ header {
 
 .desktop-menu-btn {
   display: none;
+}
+
+.socials-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-text {
@@ -404,6 +410,7 @@ footer .socials {
   width: 80%;
   padding: 0.5rem;
   margin: 1rem;
+  font-size: 0.65rem;
 }
 
 .btninput {
@@ -448,7 +455,7 @@ form {
 }
 
 .copyright-text-mobile {
-  color: gray;
+  color: var(--blue-100);
   font-size: 0.78rem;
   margin-bottom: 1rem;
 }
@@ -471,7 +478,22 @@ form {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 38rem) {
+.inputerror {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputerror .error-message {
+  color: var(--orange-400);
+  font-size: 0.7rem;
+  display: none;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* media section */
+@media (min-width: 30rem) {
   .orange-btn {
     margin-top: 0;
   }
@@ -587,7 +609,7 @@ form {
   }
   .copyright-text-desktop {
     display: block;
-    color: gray;
+    color: var(--blue-100);
     font-size: 0.78rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
