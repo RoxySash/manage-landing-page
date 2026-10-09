@@ -20,7 +20,7 @@ body {
   line-height: 1.5;
   /* 4. Improve centering within parent */
   min-height: 100vh;
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-size: clamp(0.89rem, 2.5vw, 1.1rem);
   font-family: "Be Vietnam Pro", sans-serif;
   background-color: var(--gray-50);
   display: flex;
@@ -408,8 +408,7 @@ footer .socials {
   border-radius: 30px;
   border: none;
   width: 80%;
-  padding: 0.5rem;
-  margin: 1rem;
+  padding: 0.6rem;
   font-size: 0.65rem;
 }
 
@@ -418,7 +417,6 @@ footer .socials {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
 }
 
 input::placeholder {
@@ -470,7 +468,7 @@ form {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 3rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -486,14 +484,17 @@ form {
 }
 .inputerror .error-message {
   color: var(--orange-400);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   display: none;
   margin-bottom: 0;
   text-align: center;
+  margin-top: 3.5rem;
+  margin-left: 1rem;
+  position: absolute;
 }
 
 /* media section */
-@media (min-width: 27rem) {
+@media (min-width: 35rem) {
   .orange-btn {
     margin-top: 0;
   }
