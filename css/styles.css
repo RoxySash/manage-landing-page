@@ -407,8 +407,9 @@ footer .socials {
 .input-area {
   border-radius: 30px;
   border: none;
-  width: 80%;
+  width: 200px;
   padding: 0.6rem;
+  height: 50px;
   font-size: 0.65rem;
 }
 
@@ -417,6 +418,7 @@ footer .socials {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 
 input::placeholder {
@@ -431,7 +433,9 @@ form {
 .footer-btn {
   background-color: var(--orange-400);
   color: white;
-  width: 20%;
+  width: 60px;
+  height: 50px;
+  margin-left: 1rem;
 }
 
 .footer-list {
